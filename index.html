@@ -8,7 +8,13 @@
     
     <title>Portfolio - Lola Leterrier </title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Emojis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   </head>
   
   <body>
@@ -16,9 +22,88 @@
     <div id="header"></div>
     
     <main>
-      <h1>Bienvenue !</h1>
-      <hr> <hr><hr><hr><hr><hr><hr>
-      <p>juyeufdisjnk,</p>
+      
+      <!-- Section A propos -->
+      <section id="a-propos" class="section">
+        <img class="profil" src="img/lola.jpeg" alt="Lola Leterrier">
+        <h2><span class="highlight">Lola Leterrier</span></h2>
+        <p class="intro">
+          Au cours des cinq dernières années, j’ai eu le privilège d’explorer et de concrétiser de passionnants projets dans le vaste domaine de l’informatique. Cette aventure m’a permis d’acquérir une expertise polyvalente et de me plonger dans des domaines variés.
+        </p>
+      </section>
+
+      <!-- Section Parcours -->
+      <section id="parcours" class="section">
+        <h2><span class="highlight">Mon Parcours</span></h2>
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <div class="title"><i class="fa-solid fa-briefcase"></i> Ingénieur cybersécurité - Alternance</div>
+              <div class="subtitle">2022-2024 - Casden Banque Populaire</div>
+              <div class="description">Missions : gestion des vulnérabilités, durcissement systèmes, analyse de risques, automatisation OSINT et support conformité.</div>
+            </div>
+          </div>
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <div class="title"><i class="fa-solid fa-graduation-cap"></i> Diplôme d'ingénieur</div>
+              <div class="subtitle">2022-2024 - ESIEA, spécialité cybersécurité</div>
+              <div class="description">Formation axée cybersécurité offensive/défensive, cryptographie, audit et gouvernance de la sécurité.</div>
+            </div>
+          </div>
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <div class="title"><i class="fa-solid fa-graduation-cap"></i> Licence d'informatique</div>
+              <div class="subtitle">2019-2022 - Université Paris-Saclay</div>
+              <div class="description">Bases solides en programmation, algorithmique, réseaux, systèmes et bases de données.</div>
+            </div>
+          </div>
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <div class="title"><i class="fa-solid fa-graduation-cap"></i> PCSO</div>
+              <div class="subtitle">2018-2019 - Paris-Saclay</div>
+              <div class="description">Année de mise à niveau scientifique en mathématiques, physique et informatique pour accéder à des études scientifiques.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Certifications -->
+      <section id="certifications" class="section">
+        <h2><span class="highlight">Mes certifications</span></h2>
+        <div class="grid-certifications">
+          <div class="certifications" id="cert-1"><img src="img/cert-security+.webp" alt="logo-security+"><h3>CompTIA Security+</h3><p>Fondamentaux de la cybersécurité et des meilleures pratiques.</p></div>
+          <div class="certifications" id="cert-2"><img src="img/cert-secnumedu.png" alt="logo-secnumedu"><h3>SecNumEdu - ANSSI</h3><p>Formation reconnue par l'ANSSI sur les bases de la sécurité informatique.</p></div>
+          <div class="certifications" id="cert-3"><img src="img/cert-toeic.png" alt="logo-toiec"><h3>TOEIC Listening & Reading</h3><p>Score: 900/950</p></div>
+          <div class="certifications" id="cert-4"><img src="img/cert-wallix.png" alt="logo-wallix"><h3>WCA-P: WALLIX Certified Administrator - PAM Bastion</h3><p>Maîtrise de la gestion des accès à privilèges via le bastion WALLIX.</p></div>
+          <div class="certifications" id="cert-5"><img src="img/cert-csna.webp" alt="logo-csna"><h3>Certified Stormshield Network Administrator (CSNA)</h3><p>Configuration et administration sécurisée des pare-feu Stormshield</p></div>
+          <div class="certifications" id="cert-6"><img src="img/cert-linguaskill.webp" alt="logo-linguaskill"><h3>Linguaskill (Cambridge)</h3><p>Score : 900</p><p>Listening : 180+ C1 or above</p><p>Reading : 170 B2</p></div>
+        </div>
+        
+      </section>
+
+      <!-- Section Hobbies -->
+      <section id="hobbies" class="section">
+        <h2><span class="highlight">Mes hobbies</span></h2>
+        <div class="grid-hobbies">
+          <div class="hobbie"><i class="fa-solid fa-gamepad"></i><h3>Jeux Vidéos</h3><p>Créativité, stratégie, esprit d’analyse.</p></div>
+          <div class="hobbie"><i class="fa-solid fa-robot"></i><h3>Robotique</h3><p>Curiosité tech, logique, innovation.</p></div>
+          <div class="hobbie"><i class="fas fa-dog"></i><h3>Animaux</h3><p>Empathie, engagement, bienveillance.</p></div>
+          <div class="hobbie"><i class="fa-solid fa-headphones-simple"></i><h3>Musique</h3><p>Écoute, concentration, motivation.</p></div>
+          <div class="hobbie"><i class="fa-solid fa-plane"></i><h3>Voyages</h3><p>Ouverture d’esprit, adaptabilité.</p></div>
+          <div class="hobbie"><i class="fa-solid fa-person-running">‍</i><h3>Sport</h3><p>Discipline, dépassement, régularité.</p></div>
+        </div>
+      </section>
+
+      <!-- Section Contact -->
+      <section id="contact" class="section contact">
+        <p class="big">Ici, chaque section raconte un morceau de mon parcours.</p>
+        <p class="big">Bienvenue dans mon univers, où passion, apprentissage et cybersécurité s’entrelacent.</p>
+        <p class="small"><i>N’hésitez pas à me contacter pour plus d'informations.</i></p>
+        <div class="btns-contact">
+          <a href="https://www.linkedin.com/in/lola-leterrier/" target="_blank">LINKEDIN</a>
+          <a href="#">CONTACT</a>
+        </div>
+      </section>
 
     </main>
     
