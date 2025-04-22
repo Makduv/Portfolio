@@ -137,6 +137,8 @@ body {
   width: 90%;
   max-width: 1000px;
 }
+
+/* Ajoute la barre timeline */
 .timeline::before {
   content: '';
   position: absolute;
@@ -147,23 +149,32 @@ body {
   background: #4e845e;
   transform: translateX(-50%);
 }
+
 .timeline-item {
   width: 50%;
   padding: 20px;
   position: relative;
 }
+
 .timeline-item .timeline-content {
   background: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Place des encadrés */
 .timeline-item.left {
   left: 0;
 }
 .timeline-item.right {
   left: 50%;
 }
+.timeline-item.right.duo-right{
+  left: 0%;
+}
+
+/* Ajoute les points */
 .timeline-item::before {
   content: '';
   position: absolute;
@@ -174,12 +185,25 @@ body {
   border-radius: 50%;
   z-index: 1;
 }
+
+/* Place des points*/
 .timeline-item.left::before {
   right: -10px;
 }
 .timeline-item.right::before {
   left: -10px;
 }
+
+/* Met les deux alignés sur 1 seul point */
+.timeline-duo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
 .emoji {
   font-size: 20px;
   margin-right: 8px;
