@@ -1,3 +1,5 @@
+/* Ajoute le header et footer aux pages HTML */
+
 window.addEventListener('DOMContentLoaded', () => {
   fetch('header.html')
     .then(response => response.text())
