@@ -132,7 +132,7 @@ body {
 /* ------------------------- Parcours ------------------------- */
 .timeline {
   position: relative;
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 20px 0;
   width: 90%;
   max-width: 1000px;
@@ -375,17 +375,30 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .timeline {
+    padding: 0 10px;
+  }
+  
   .timeline::before {
     left: 8px;
   }
+
   .timeline-item {
     width: 100%;
+    left: 0;
     padding-left: 30px;
     padding-right: 10px;
   }
+
   .timeline-item.right {
     left: 0;
   }
+
+  .timeline-duo {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .timeline-item.left::before, .timeline-item.right::before {
     left: 0;
   }
