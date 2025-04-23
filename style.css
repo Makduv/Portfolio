@@ -124,7 +124,7 @@ body {
 
 .intro {
   color: var(--gray);
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 20px auto;
   font-size: 18px;
 }
@@ -348,6 +348,14 @@ footer {
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     padding: 20px;
     border-radius: 10px;
+  }
+
+  .nav-links a:hover {
+    color: var(--text-color);
+    text-decoration: underline double;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #4e845e; 
+
   }
 
   .nav-links.active {
