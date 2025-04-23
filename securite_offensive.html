@@ -24,11 +24,58 @@
 
     <main>
         
+      <!-- Section Projets -->
+      <section id="projets" class="section">
+        <!--<img class="banniere" src="img/banniere-off.webp" alt="Banniere-offensive">-->
+        <h2><span class="highlight-off">Sécurité Offensive</span></h2>
+        <p class="intro">
+          La sécurité offensive désigne l’ensemble des techniques visant à identifier, exploiter et documenter les vulnérabilités d’un système, d’un réseau ou d’une application. Elle inclut le test d’intrusion (pentest), l’analyse de sécurité en contexte réel (red team), ainsi que la participation à des programmes de bug bounty. Cette approche permet d’évaluer le niveau de résistance des environnements informatiques face à des scénarios d’attaque réalistes.
+        </p>
+      </section>
+
+      <!-- Section Portfolio -->
+      <section id="portfolio" class="section">
+        <h2><span class="highlight-off">Projets</span></h2>
+        <div class="filtres">
+          <button class="active" data-filtre="all">Toutes</button>
+          <button data-filtre="autre">Autre</button>
+          <button data-filtre="dev">Développement</button>
+          <button data-filtre="ia">IA Et Apprentissage Automatique</button>
+          <button data-filtre="reseau">Réseau Et Sécurité</button>
+        </div>
+
+        <div class="projets" id="projets">
+          <!-- Exemple de projet -->
+          <div class="projet" data-categorie="reseau">
+            <img src="google-dorks.jpg" alt="Google Dorks">
+            <h3>Google Dorks</h3>
+            <p>Réseau et Sécurité</p>
+          </div>
+
+          <div class="projet" data-categorie="reseau">
+            <img src="audit-pentest.jpg" alt="Audit et Pentest">
+            <h3>Audit et Pentest</h3>
+            <p>Réseau et Sécurité</p>
+          </div>
+
+          <div class="projet" data-categorie="reseau">
+            <img src="ccna.jpg" alt="Cisco CCNA">
+            <h3>Cisco CCNA</h3>
+            <p>Réseau et Sécurité</p>
+          </div>
+
+          <!-- + d’autres projets si besoin -->
+        </div>
+
+        <div class="voir-plus-container">
+          <button id="voir-plus">VOIR PLUS</button>
+        </div>
+      </section>
 
     </main>
     
     <div id="footer"></div>
 
-    <script src="include.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

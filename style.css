@@ -1,3 +1,7 @@
+/**************************************************************************/
+/***************************** PAGE D'ACCUEIL *****************************/
+/**************************************************************************/
+
 :root {
   --accent-color: #b9f5d8;
   --text-color: #333;
@@ -125,7 +129,7 @@ body {
 .intro {
   color: var(--gray);
   max-width: 1150px;
-  margin: 20px auto;
+  margin: 40px auto;
   font-size: 18px;
 }
 
@@ -154,6 +158,14 @@ body {
   width: 50%;
   padding: 20px;
   position: relative;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1.2s ease-out;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .timeline-item .timeline-content {
@@ -354,7 +366,7 @@ footer {
     color: var(--text-color);
     text-decoration: underline double;
     text-decoration-thickness: 2px;
-    text-decoration-color: #4e845e; 
+    text-decoration-color: #282a28; 
 
   }
 
@@ -390,12 +402,72 @@ footer {
     gap: 20px;
   }
 
-  .timeline-item.right {
-    left: 0;
-  }
-
-  .timeline-item.left::before, .timeline-item.right::before {
+  .timeline-item.left::before, .timeline-item.right::before, .timeline-item.right {
     left: 0;
   }
 }
+
+/**************************************************************************/
+/****************************** PAGES THÈMES ******************************/
+/**************************************************************************/
+
+/* ------------------------- Projets ------------------------- */
+#projets {
+  margin-top: 125px;
+}
+
+/*************************************************************************/
+/************************ PAGE SÉCURITÉ OFFENSIVE ************************/
+/*************************************************************************/
+
+/* ------------------------- Général ------------------------- */
+
+/* Surlignage Titre */
+.highlight-off {
+  background: linear-gradient(to bottom, #dc262695 50%, transparent 50%);
+  display: inline;
+  font-size: 40px;
+}
+
+/*************************************************************************/
+/********************* PAGE GOUVERNANCE & CONFORMITE *********************/
+/*************************************************************************/
+
+/* ------------------------- Général ------------------------- */
+
+/* Surlignage Titre */
+.highlight-gouv {
+  background: linear-gradient(to bottom, #04785795 50%, transparent 50%);
+  display: inline;
+  font-size: 40px;
+}
+
+/*************************************************************************/
+/***************************** PAGE DEV & IA *****************************/
+/*************************************************************************/
+
+/* ------------------------- Général ------------------------- */
+
+/* Surlignage Titre */
+.highlight-dev {
+  background: linear-gradient(to bottom, #d06feb94 50%, transparent 50%);
+  display: inline;
+  font-size: 40px;
+}
+
+/*************************************************************************/
+/********************** PAGE INFRASTRUCTURE & CLOUD **********************/
+/*************************************************************************/
+
+/* ------------------------- Général ------------------------- */
+
+/* Surlignage Titre */
+.highlight-infra {
+  background: linear-gradient(to bottom, #1e3b8a88 50%, transparent 50%);
+  display: inline;
+  font-size: 40px;
+}
+
+
+
 
