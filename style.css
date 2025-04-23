@@ -343,7 +343,7 @@ footer {
     position: absolute;
     right: 30px;
     top: 70px;
-    background: blue;
+    background: #f5f5f5;
     flex-direction: column;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     padding: 20px;
