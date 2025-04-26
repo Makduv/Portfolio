@@ -533,6 +533,7 @@ footer {
   background: #f7f7f7;
   font-size: 14px;
   cursor: pointer;
+  color:#111;
 }
 
 #voir-plus:hover, #bb-voir-plus:hover, #tp-voir-plus:hover, #formations-voir-plus:hover, #certifs-voir-plus:hover {
@@ -963,15 +964,15 @@ footer {
 /* ➔ RESPONSIVE smartphone */
 @media (max-width: 768px) {
   .bb-container {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* ➔ 2 colonnes fixes */
     gap: 10px;
     max-width: 95%;
     padding: 0 10px;
   }
 
   .bb-item {
-    max-width: 160px;
-    margin: 10px auto 0;
+    max-width: 100%; /* prend toute la largeur de la cellule */
+    margin: 0 auto;
   }
 
   .bb-item img {
