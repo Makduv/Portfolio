@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setupVoirPlus(".bb-container", ".bb-container .bb-item", "#bb-voir-plus", 4, 2);
         setupVoirPlus(".tp-container", ".tp-container .tp-item", "#tp-voir-plus", 4, 2);
         setupVoirPlus(".formations-container", ".formations-container .formations-item", "#formations-voir-plus", 2, 2);
+        setupVoirPlus(".certifs-container", ".certifs-container .certifs-item", "#certifs-voir-plus", 2, 2);
 
       } else {
         // Code spécial pour desktop
@@ -18,8 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
         setupVoirPlus(".bb-container", ".bb-container .bb-item", "#bb-voir-plus", 6, 6);
         setupVoirPlus(".tp-container", ".tp-container .tp-item", "#tp-voir-plus", 5, 5);
         setupVoirPlus(".formations-container", ".formations-container .formations-item", "#formations-voir-plus", 2, 2);
+        setupVoirPlus(".certifs-container", ".certifs-container .certifs-item", "#certifs-voir-plus", 4, 4);
     }
-      
+    
+    initCertificationsZoom();
     
 });
   
@@ -159,4 +162,31 @@ function filtreProjets(){
     afficherItems();
 }
 
+function initCertificationsZoom() {
+    const modal = document.getElementById("zoom-modal");
+    const zoomedImg = document.querySelector(".zoomed-image");
+    const closeZoom = document.querySelector(".close-zoom");
+  
+    if (!modal || !zoomedImg || !closeZoom) return; // Sécurité si jamais les éléments n'existent pas
+  
+    document.querySelectorAll(".certifs-item img").forEach(img => {
+      img.addEventListener("click", () => {
+        zoomedImg.src = img.src;
+        modal.style.display = "flex";
+      });
+    });
+  
+    closeZoom.addEventListener("click", () => {
+      modal.style.display = "none";
+      zoomedImg.src = "";
+    });
+  
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        zoomedImg.src = "";
+      }
+    });
+  }
+  
 
