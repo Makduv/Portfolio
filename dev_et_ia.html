@@ -7,7 +7,7 @@
         <!-- rendre une page web responsive => adaptée aux écrans de toutes tailles --> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <title>Portfolio - Offensif </title>
+        <title>Portfolio - Akposz</title>
         <link rel="stylesheet" href="style.css" />
     
         <!-- Fonts -->
@@ -24,13 +24,84 @@
 
     <main>
         
-      <!-- Section Projets -->
-      <section id="projets" class="section">
+      <!-- Section Definition -->
+      <section id="definition" class="section">
         <!--<img class="banniere" src="img/banniere-off.webp" alt="Banniere-offensive">-->
         <h2><span class="highlight-dev">Développement & IA</span></h2>
         <p class="intro">
           Le développement et l’intelligence artificielle regroupent les techniques de conception d’applications, de programmation web, de logiciels, de jeux ou d’outils graphiques, ainsi que l’automatisation de processus par scripts. Ce domaine inclut également l’algorithmie, la science des données, le machine learning et la mise en œuvre de modèles d’intelligence artificielle pour la création de systèmes adaptatifs et intelligents.
         </p>
+      </section>
+
+      <!-- Section Projet -->
+      <section id="projet" class="section">
+        <h2><span class="highlight-dev">Projets</span></h2>
+        <div class="filtres">
+          <button class="active" data-filtre="all">Tous</button>
+          <button data-filtre="web-dev">Développement Web</button>
+          <button data-filtre="outils">Développement d'outils & Scripts</button>
+          <button data-filtre="ia-generative">IA Générative & Chatbots</button>
+          <button data-filtre="machine-learning">Machine Learning</button>
+          <button data-filtre="deep-learning">Deep Learning</button>
+          <button data-filtre="data-science">Data Science & Analyse de données</button>
+          <button data-filtre="scraping">Web Scraping & Automatisation</button>
+          <button data-filtre="api">API & Microservices</button>
+          <button data-filtre="devops">DevOps & CI/CD</button>
+          <button data-filtre="securite-app">Sécurité Applicative</button>
+        </div>
+
+        <div class="projets" id="projets">
+
+          <!-- Exemple de projet -->
+          <div class="projet" data-categorie="api"><div class="image-wrapper"><a href="#" target="_blank"><img src="img/cert-csna.webp" alt="Google Dorks"><div class="overlay"><h3>Google Dorks</h3><p>Réseau et Sécurité</p></div></a></div></div>
+          <div class="projet" data-categorie="devops"><div class="image-wrapper"><a href="#" target="_blank"><img src="img/cert-linguaskill.webp" alt="Audit et Pentest"><div class="overlay"><h3>Audit et Pentest</h3><p>Réseau et Sécurité</p></div></a></div></div>
+          <div class="projet" data-categorie="scraping"><div class="image-wrapper"><a href="#" target="_blank"><img src="img/lola.jpeg" alt="Cisco CCNA"><div class="overlay"><h3>Cisco CCNA</h3><p>Réseau et Sécurité</p></div></a></div></div>
+
+          <!-- + d’autres projets si besoin -->
+        </div>
+
+        <div class="voir-plus-container">
+          <button id="voir-plus">VOIR PLUS</button>
+        </div>
+      </section>
+
+       <!-- Section CTF & Challenges -->
+       <section id="ctf" class="section">
+        <h2><span class="highlight-dev">Challenges</span></h2>
+        <div class="carousel-outer">
+          <div class="carousel-wrapper">
+            <div class="carousel-container">
+              <div class="carousel-item"><a href="#" target="_blank"><img src="img/az.png" alt="Slide 1"><div class="overlay"><h3>Cisco CCNA</h3><p>Réseau et Sécurité</p></div></a></div>
+              <div class="carousel-item"><a href="#" target="_blank"><img src="img/rootme.svg" alt="Slide 2"><div class="overlay"><h3>Cisco CCNA</h3><p>Réseau et Sécurité</p></div></a></div>
+              <div class="carousel-item"><a href="#" target="_blank"><img src="img/brains.png" alt="Slide 3"><div class="overlay"><h3>Cisco CCNA</h3><p>Réseau et Sécurité</p></div></a></div>
+              <div class="carousel-item"><a href="#" target="_blank"><img src="img/lola.jpeg" alt="Slide 4"><div class="overlay"><h3>Cisco CCNA</h3><p>Réseau et Sécurité</p></div></a></div>
+              <div class="carousel-item"><a href="#" target="_blank"><img src="img/cert-csna.webp" alt="Slide 1"><div class="overlay"><h3>Cisco CCNA</h3><p>Réseau et Sécurité</p></div></a></div>
+              <div class="carousel-item"><a href="#" target="_blank"><img src="img/cert-security+.webp" alt="Slide 2"><div class="overlay"><h3>Cisco CCNA</h3><p>Réseau et Sécurité</p></div></a></div>
+              <div class="carousel-item"><a href="#" target="_blank"><img src="img/cert-wallix.png" alt="Slide 3"><div class="overlay"><h3>Cisco CCNA</h3><p>Réseau et Sécurité</p></div></a></div>
+              <div class="carousel-item"><a href="#" target="_blank"><img src="img/lola.jpeg" alt="Slide 4"><div class="overlay"><h3>Cisco CCNA</h3><p>Réseau et Sécurité</p></div></a></div>
+              <!-- + d'autres CTF -->
+            </div>
+          </div>    
+        </div>
+      </section>
+
+      <!-- Section TP et Labs -->
+      <section id="tps" class="section">
+        <h2><span class="highlight-dev">Tp & Labs</span></h2>
+          <div class="tp-container">
+            <div class="tp-item"><a href="#" target="_blank"><img src="img/cert-linguaskill.webp" alt="Lab1"><h3>Nom</h3><p class="cours-nom"><i>Cours/Ecole</i></p><p class="descr-tp">Description</p></a></div>
+            <div class="tp-item"><a href="#" target="_blank"><img src="img/brains.png" alt="Lab1"><h3>Nom</h3><p class="cours-nom"><i>Cours/Ecole</i></p><p class="descr-tp">Description</p></a></div>
+            <div class="tp-item"><a href="#" target="_blank"><img src="img/lola.jpeg" alt="Lab1"><h3>Nom</h3><p class="cours-nom"><i>Cours/Ecole</i></p><p class="descr-tp">Description</p></a></div>
+            <div class="tp-item"><a href="#" target="_blank"><img src="img/cert-csna.webp" alt="Lab1"><h3>Nom</h3><p class="cours-nom"><i>Cours/Ecole</i></p><p class="descr-tp">Description</p></a></div>
+            <div class="tp-item"><a href="#" target="_blank"><img src="img/cert-wallix.png" alt="Lab1"><h3>Nom</h3><p class="cours-nom"><i>Cours/Ecole</i></p><p class="descr-tp">Voici un TP de très bon qualité qui m'a prit pas mal de temps a faire, sur le sujet des tortue en arabie saoudite qui porte des voiles et des mocassins Gucci.</p></a></div>
+            
+            <!-- + de tps -->
+          </div>
+
+          <div class="tp-voir-plus-container">
+            <button id="tp-voir-plus">VOIR PLUS</button>
+          </div>
+
       </section>
       
     </main>
