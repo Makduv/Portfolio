@@ -869,7 +869,7 @@ footer {
   .certifs-container {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    max-width: 100%;
+    max-width: 70%;
     max-height: 100%;
     padding: 0 10px;
   }
@@ -957,6 +957,34 @@ footer {
 .bb-item a {
   color: #333; 
   text-decoration: none; 
+}
+
+/* ➔ RESPONSIVE smartphone */
+@media (max-width: 768px) {
+  .bb-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    max-width: 95%;
+    padding: 0 10px;
+  }
+
+  .bb-item {
+    max-width: 160px;
+    margin: 10px auto 0;
+  }
+
+  .bb-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  #bb-flaw {
+    font-size: 14px;
+  }
+
+  #bb-state {
+    font-size: 12px;
+  }
 }
 
 
