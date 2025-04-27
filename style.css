@@ -930,7 +930,7 @@ footer {
 @media (max-width: 768px) {
   .skills-list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(140px, 1fr)); 
+    grid-template-columns: repeat(2, minmax(100px, 1fr)); 
     gap: 20px;
     justify-content: center; 
     justify-items: center; 
