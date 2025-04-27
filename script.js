@@ -12,14 +12,17 @@ document.addEventListener("DOMContentLoaded", () => {
         setupVoirPlus(".tp-container", ".tp-container .tp-item", "#tp-voir-plus", 4, 2);
         setupVoirPlus(".formations-container", ".formations-container .formations-item", "#formations-voir-plus", 2, 2);
         setupVoirPlus(".certifs-container", ".certifs-container .certifs-item", "#certifs-voir-plus", 2, 2);
-
-      } else {
+        setupVoirPlus(".skills-list", ".skills-list li", "#techniques-voir-plus",12,6);
+        setupVoirPlus(".bibliography",".bibliography .reference","#book-voir-plus",2,2);
+        } else {
         // Code spécial pour desktop
         setupVoirPlus("#projets", "#projets .projet", "#voir-plus", 6, 6, resizeMasonryItems);
         setupVoirPlus(".bb-container", ".bb-container .bb-item", "#bb-voir-plus", 6, 6);
         setupVoirPlus(".tp-container", ".tp-container .tp-item", "#tp-voir-plus", 5, 5);
         setupVoirPlus(".formations-container", ".formations-container .formations-item", "#formations-voir-plus", 2, 2);
         setupVoirPlus(".certifs-container", ".certifs-container .certifs-item", "#certifs-voir-plus", 4, 4);
+        setupVoirPlus(".skills-list", ".skills-list li", "#techniques-voir-plus",15,5);
+        setupVoirPlus(".bibliography",".bibliography .reference","#book-voir-plus",4,2);
     }
     
     initCertificationsZoom();
